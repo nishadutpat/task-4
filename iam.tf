@@ -36,7 +36,7 @@ resource "aws_lambda_permission" "allow_s3" {
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.csv_lambda.function_name
   principal     = "s3.amazonaws.com"
-  source_arn    = aws_s3_bucket.csv_bucket.arn
+  source_arn    = aws_s3_bucket.buck-for-task4.arn
 }
 
 
