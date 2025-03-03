@@ -1,6 +1,6 @@
 resource "aws_dynamodb_table" "task_table" {
   name         = "TaskTable"
-  
+  billing_mode = "PAY_PER_REQUEST"
 
   hash_key = "id"
 
