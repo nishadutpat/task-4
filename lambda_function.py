@@ -3,7 +3,7 @@ import csv
 
 s3_client = boto3.client("s3")
 dynamodb = boto3.resource("dynamodb")
-TABLE_NAME = "TaskTable"
+TABLE_NAME = "Task4_table"
 
 def lambda_handler(event, context):
     try:
